@@ -1,0 +1,29 @@
+{
+  "expo": {
+    "name": "projeto-individual",
+    "slug": "projeto-individual",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/share-tw.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/share-tw.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/share-tw.png",
+        "backgroundColor": "#ffffff"
+      },
+      "edgeToEdgeEnabled": true
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    }
+  }
+}
