@@ -13,7 +13,7 @@ export const styles = StyleSheet.create({
         boxShadow: '0px 5px 3px -4px rgba(0, 0, 0, 0.3)'
     },
     title: {
-        color: '#33321A',
+        color: '#404040',
         fontSize: 15,
         fontWeight: 'bold',
         marginLeft: 30,
@@ -30,7 +30,8 @@ export const styles = StyleSheet.create({
         borderWidth: 3
     },
     nivel: {
-        marginLeft: 57
+        marginLeft: 57,
+        color: '#9390AC'
     },
     botoes: {
         flexDirection: 'row',
@@ -74,20 +75,58 @@ export const styles = StyleSheet.create({
         height: 490
     },
     display: {
-    height: 370,
-    borderTopLeftRadius: 40,
-    borderBottomRightRadius: 40,
-    borderTopRightRadius: 10,
-    borderBottomLeftRadius: 10,
-    overflow: 'hidden',
-    boxShadow: 'rgba(0, 0, 0, 0.35) 5px 5px 10px',
-  },
+        height: 370,
+        borderTopLeftRadius: 40,
+        borderBottomRightRadius: 40,
+        borderTopRightRadius: 10,
+        borderBottomLeftRadius: 10,
+        overflow: 'hidden',
+        boxShadow: 'rgba(0, 0, 0, 0.35) 5px 5px 10px',
+    },
     pack: {
         width: 150,
         height: 300,
         alignSelf: 'center',
-        marginTop: 15
+        marginTop: 15,
+        boxShadow: 'rgba(0, 0, 0, 0.35) 5px 5px 10px',
+    },
+    timer: {
+        backgroundColor: '#D0D0DC',
+        width: 150,
+        height: 50,
+        borderRadius: 50,
+        marginTop: -25,
+        marginLeft: 87,
+        boxShadow: 'rgba(0, 0, 0, 0.35) 5px 5px 10px',
+    },
+    timerBar: {
+        width: 100,
+        height: 20,
+        marginTop: 5,
+        marginLeft: 20,
+        borderRadius: 50
+    },
+    pikachu: {
+        width: 55,
+        height: 55,
+        marginTop: -40,
+        marginLeft: 100
+    },
+    timerText: {
+        marginTop: -12,
+        marginLeft: 32,
+        color: '#9390AC'
+    },
+    hourglass: {
+        width: 50,
+        height: 62,
+        backgroundColor: '#D0D0DC',
+        marginTop: -55,
+        marginLeft: 155,
+        borderRadius: 10,
+        boxShadow: 'rgba(0, 0, 0, 0.35) 5px 5px 10px',
+
     }
 
 
-})
+    })
