@@ -16,6 +16,11 @@ import exclamacao from './assets/mark.png'
 import card from './assets/trading.png'
 import chansey from './assets/chansey.png'
 import hearts from './assets/health-bar.png'
+import home from './assets/home.png'
+import cards from './assets/cards.png'
+import friends from './assets/friends.png'
+import vs from './assets/vs.png'
+import menu from './assets/menu.png'
 function App() {
   return (
     <View style={styles.container}>
@@ -63,39 +68,56 @@ function App() {
           <Text style={styles.timerText}>🕒 01 h 05 m</Text>
           <Image style={styles.hourglass} source={hourglass} />
         </TouchableOpacity>
-       <TouchableOpacity> 
-        <LinearGradient
-          colors={['#D0D0DC', '#BFBFBF']}
-          start={{ x: 1., y: 0.6 }}
-          end={{ x: 0.8, y: 0 }}
-          style={styles.buttonLoja}>
-          <Text style={styles.lojaText1}>Presentes diários disponíveis</Text>
-          <Image style={styles.exclamacao} source={exclamacao} />
-          <Image style={styles.lojaImg} source={loja} />
-          <Text style={styles.lojaText2}>Loja</Text>
+        <TouchableOpacity>
+          <LinearGradient
+            colors={['#D0D0DC', '#BFBFBF']}
+            start={{ x: 1., y: 0.6 }}
+            end={{ x: 0.8, y: 0 }}
+            style={styles.buttonLoja}>
+            <Text style={styles.lojaText1}>Presentes diários disponíveis</Text>
+            <Image style={styles.exclamacao} source={exclamacao} />
+            <Image style={styles.lojaImg} source={loja} />
+            <Text style={styles.lojaText2}>Loja</Text>
           </LinearGradient>
         </TouchableOpacity>
         <TouchableOpacity>
-        <LinearGradient
-          colors={['#D0D0DC', '#F2B3CA']}
-          start={{ x: 1, y: 0.6 }}
-          end={{ x: 0.8, y: 0 }}
-          style={styles.buttonEscolha}>
           <LinearGradient
-            colors={['#E84C78', '#fff']}
-            start={{ x: 2, y: 0.42 }}
-            end={{ x: -0.5, y: 0.42 }}
-            style={styles.chanseyBox}>
+            colors={['#D0D0DC', '#F2B3CA']}
+            start={{ x: 1, y: 0.6 }}
+            end={{ x: 0.8, y: 0 }}
+            style={styles.buttonEscolha}>
+            <LinearGradient
+              colors={['#E84C78', '#fff']}
+              start={{ x: 2, y: 0.42 }}
+              end={{ x: -0.5, y: 0.42 }}
+              style={styles.chanseyBox}>
               <Image style={styles.chansey} source={chansey} />
               <Text style={styles.escolhaText1}>Escolha Chansey disponível</Text>
               <Image style={styles.hearts} source={hearts} />
+            </LinearGradient>
+            <Image style={styles.escolhaImg} source={card} />
+            <Text style={styles.escolhaText2}>Escolha Misteriosa</Text>
           </LinearGradient>
-          <Image style={styles.escolhaImg} source={card} />
-          <Text style={styles.escolhaText2}>Escolha Misteriosa</Text>
-        </LinearGradient>  
         </TouchableOpacity>
       </View>
-    </View>
+      <View style={styles.footer}>
+            <TouchableOpacity>
+              <Image style={styles.botoesFooter} source={home} />
+            </TouchableOpacity>
+            <TouchableOpacity>
+              <Image style={styles.botoesFooter} source={cards} />
+            </TouchableOpacity>
+            <TouchableOpacity>
+              <Image style={styles.botoesFooter} source={friends} />
+            </TouchableOpacity>
+            <TouchableOpacity>
+              <Image style={styles.botoesFooter} source={vs} />
+            </TouchableOpacity>
+            <TouchableOpacity>
+              <Image style={styles.botoesFooter} source={menu} />
+            </TouchableOpacity>
+        </View>
+      </View>
   )
 }
 

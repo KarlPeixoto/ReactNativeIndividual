@@ -220,6 +220,15 @@ export const styles = StyleSheet.create({
         borderWidth: 2,
         borderRadius: 50
     },
-    
+    footer: {
+        flexDirection: 'row',
+    },
+    botoesFooter: {
+        width: 30,
+        height: 30,
+        marginTop: 120,
+        marginLeft: 30,
+        tintColor: '#404040'
+    }
 
 })
