@@ -149,7 +149,6 @@ export const styles = StyleSheet.create({
         color: '#00012',
         fontSize: 12,
         textAlign: 'center',
-        justifyContent: 'center'
     },
     exclamacao: {
         width: 20,
@@ -179,6 +178,48 @@ export const styles = StyleSheet.create({
         borderTopRightRadius: 10,
         borderBottomLeftRadius: 10,
         boxShadow: 'rgba(0, 0, 0, 0.35) 5px 5px 10px',
-    }
+    },
+    escolhaImg: {
+        width: 55,
+        height: 55,
+        alignSelf: 'center',
+        marginTop: 5
+    },
+    chanseyBox: {
+        backgroundColor: 'red',
+        width: 120,
+        height: 35,
+        borderRadius: 50,
+        marginTop: -20,
+        boxShadow: 'rgba(0, 0, 0, 0.35) 5px 5px 10px',
+    },
+    chansey: {
+        width: 50,
+        height: 50,
+        marginTop: -7,
+        marginLeft: -5
+    },
+    escolhaText1: {
+        marginTop: -40,
+        textAlign: 'right',
+        fontSize: 10,
+        color: '#fff'
+    },
+    escolhaText2: {
+        alignSelf: 'center',
+        marginTop: 5,
+        color: '#9390AC'
+    },
+    hearts: {
+        width: 50,
+        height: 20,
+        marginTop: 90,
+        marginLeft: 50,
+        tintColor: '#F28705',
+        borderColor: '#F28705',
+        borderWidth: 2,
+        borderRadius: 50
+    },
+    
 
 })
