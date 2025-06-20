@@ -71,7 +71,7 @@ export const styles = StyleSheet.create({
         marginTop: -35
     },
     conteudo: {
-        marginTop: 80,
+        marginTop: 45,
         height: 490
     },
     display: {
@@ -125,8 +125,60 @@ export const styles = StyleSheet.create({
         marginLeft: 155,
         borderRadius: 10,
         boxShadow: 'rgba(0, 0, 0, 0.35) 5px 5px 10px',
+    },
+    buttonLoja: {
+        backgroundColor: '#D0D0DC',
+        width: 150,
+        height: 120,
+        marginTop: 25,
+        marginLeft: 175,
+         borderTopLeftRadius: 40,
+        borderBottomRightRadius: 40,
+        borderTopRightRadius: 10,
+        borderBottomLeftRadius: 10,
+        boxShadow: 'rgba(0, 0, 0, 0.35) 5px 5px 10px',
 
+    },
+    lojaText1: {
+        backgroundColor: '#D0D0DC',
+        width: 120,
+        height: 35,
+        borderRadius: 50,
+        marginTop: -20,
+        boxShadow: 'rgba(0, 0, 0, 0.35) 5px 5px 10px',
+        color: '#00012',
+        fontSize: 12,
+        textAlign: 'center',
+        justifyContent: 'center'
+    },
+    exclamacao: {
+        width: 20,
+        height: 20,
+        marginLeft: 140,
+        marginTop: -20
+    },
+    lojaImg: {
+        width: 50,
+        height: 50,
+        tintColor: '#9390AC',
+        alignSelf: 'center',
+        marginTop: 5
+    },
+    lojaText2: {
+        alignSelf: 'center',
+        marginTop: 10,
+        color: '#9390AC'
+    },
+    buttonEscolha: {
+        backgroundColor: '#D0D0DC',
+        width: 150,
+        height: 120,
+        marginTop: -120,
+         borderTopLeftRadius: 40,
+        borderBottomRightRadius: 40,
+        borderTopRightRadius: 10,
+        borderBottomLeftRadius: 10,
+        boxShadow: 'rgba(0, 0, 0, 0.35) 5px 5px 10px',
     }
 
-
-    })
+})

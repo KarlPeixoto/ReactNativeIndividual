@@ -12,6 +12,8 @@ import snorlax from './assets/SnorlaxCard.png'
 import pack from './assets/Pack.png'
 import pikachu from './assets/ChatGPT Image 19 de jun. de 2025, 16_40_57.png'
 import hourglass from './assets/hourglass.png'
+import loja from './assets/shopping-bag.png'
+import exclamacao from './assets/mark.png'
 function App() {
   return (
     <View style={styles.container}>
@@ -41,8 +43,8 @@ function App() {
       <View style={styles.conteudo}>
         <LinearGradient
           colors={['#D0D0DC', '#FA3419']}
-          start={{ x: 1.01, y: 0.7 }}
-            end={{ x: 1, y: 0.45 }}
+          start={{ x: 1., y: 0.6 }}
+          end={{ x: 0.8, y: 0 }}
           style={styles.display}>
           <TouchableOpacity>
             <Image style={styles.pack} source={pack} />
@@ -58,6 +60,15 @@ function App() {
           <Image style={styles.pikachu} source={pikachu} />
           <Text style={styles.timerText}>🕒 01 h 05 m</Text>
           <Image style={styles.hourglass} source={hourglass} />
+        </TouchableOpacity>
+        <TouchableOpacity style={styles.buttonLoja}>
+          <Text style={styles.lojaText1}>Presentes diários disponíveis</Text>
+          <Image style={styles.exclamacao} source={exclamacao} />
+          <Image style={styles.lojaImg} source={loja} />
+          <Text style={styles.lojaText2}>Loja</Text>
+        </TouchableOpacity>
+        <TouchableOpacity style={styles.buttonEscolha}>
+          <Image style={styles.lojaImg} source={loja} />
         </TouchableOpacity>
       </View>
     </View>
