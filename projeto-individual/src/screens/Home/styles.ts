@@ -131,8 +131,8 @@ export const styles = StyleSheet.create({
         width: 150,
         height: 120,
         marginTop: 25,
-        marginLeft: 175,
-         borderTopLeftRadius: 40,
+        marginLeft: 170,
+        borderTopLeftRadius: 40,
         borderBottomRightRadius: 40,
         borderTopRightRadius: 10,
         borderBottomLeftRadius: 10,
@@ -173,7 +173,7 @@ export const styles = StyleSheet.create({
         width: 150,
         height: 120,
         marginTop: -120,
-         borderTopLeftRadius: 40,
+        borderTopLeftRadius: 40,
         borderBottomRightRadius: 40,
         borderTopRightRadius: 10,
         borderBottomLeftRadius: 10,
@@ -222,13 +222,31 @@ export const styles = StyleSheet.create({
     },
     footer: {
         flexDirection: 'row',
+        justifyContent: 'space-between',
+        alignItems: 'center',
+        paddingHorizontal: 5,
     },
     botoesFooter: {
         width: 30,
         height: 30,
         marginTop: 120,
-        marginLeft: 30,
-        tintColor: '#404040'
+        tintColor: '#404040',
+    },
+    botaoMissao: {
+        width: 30,
+        height: 30,
+        marginLeft: 290.9,
+        marginTop: 20,
+        borderRadius: 10,
+        boxShadow: 'rgba(0, 0, 0, 0.35) 5px 5px 10px',
+        alignContent: 'center'
+    },
+    textMissao: {
+        marginTop: 5,
+        marginLeft: 290,
+        color: '#9390AC',
+        fontSize: 8.5,
+        fontWeight: 'bold'
     }
 
 })

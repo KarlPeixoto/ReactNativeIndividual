@@ -21,6 +21,7 @@ import cards from '../../../assets/cards.png'
 import friends from '../../../assets/friends.png'
 import vs from '../../../assets/vs.png'
 import menu from '../../../assets/menu.png'
+import missao from '../../../assets/done.png'
 export function Home() {
   return (
     <View style={styles.container}>
@@ -99,24 +100,28 @@ export function Home() {
             <Text style={styles.escolhaText2}>Escolha Misteriosa</Text>
           </LinearGradient>
         </TouchableOpacity>
+        <TouchableOpacity>
+          <Image style={styles.botaoMissao} source={missao} />
+          <Text style={styles.textMissao}>Missões</Text>
+        </TouchableOpacity>
       </View>
       <View style={styles.footer}>
-            <TouchableOpacity>
-              <Image style={styles.botoesFooter} source={home} />
-            </TouchableOpacity>
-            <TouchableOpacity>
-              <Image style={styles.botoesFooter} source={cards} />
-            </TouchableOpacity>
-            <TouchableOpacity>
-              <Image style={styles.botoesFooter} source={friends} />
-            </TouchableOpacity>
-            <TouchableOpacity>
-              <Image style={styles.botoesFooter} source={vs} />
-            </TouchableOpacity>
-            <TouchableOpacity>
-              <Image style={styles.botoesFooter} source={menu} />
-            </TouchableOpacity>
-        </View>
+        <TouchableOpacity>
+          <Image style={styles.botoesFooter} source={home} />
+        </TouchableOpacity>
+        <TouchableOpacity>
+          <Image style={styles.botoesFooter} source={cards} />
+        </TouchableOpacity>
+        <TouchableOpacity>
+          <Image style={styles.botoesFooter} source={friends} />
+        </TouchableOpacity>
+        <TouchableOpacity>
+          <Image style={styles.botoesFooter} source={vs} />
+        </TouchableOpacity>
+        <TouchableOpacity>
+          <Image style={styles.botoesFooter} source={menu} />
+        </TouchableOpacity>
       </View>
+    </View>
   )
 };
