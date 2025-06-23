@@ -21,7 +21,8 @@ export const styles = StyleSheet.create({
     input: {
         backgroundColor: '#252526',
         borderRadius: 10,
-        margin: 10
+        margin: 10,
+        color: '#fff'
     },
     eye: {
         width: 30,
@@ -70,11 +71,13 @@ export const styles = StyleSheet.create({
     textoPokemon1: {
         textAlign: 'center',
         marginTop: 20,
-        color: '#9390AC'
+        color: '#9390AC',
+        fontSize: 10
     },
     textoPokemon2: {
         textAlign: 'center',
-        color: '#9390AC'
+        color: '#9390AC',
+        fontSize: 10
     }
 
 })
