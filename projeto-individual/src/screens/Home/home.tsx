@@ -2,12 +2,9 @@ import React from 'react';
 import { View, Text, Image, TouchableOpacity } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
 import { styles } from './styles'
-import perfil from '../../../assets/shiny-charizard.png';
-import money from '../../../assets/dollar.png'
-import news from '../../../assets/email.png'
-import gift from '../../../assets/gift.png'
-import star from '../../../assets/shield.png'
-import snorlax from '../../../assets/SnorlaxCard.png'
+import { Footer } from '../../components/Footer';
+import { Header } from '../../components/Header';
+
 import pack from '../../../assets/Pack.png'
 import pikachu from '../../../assets/ChatGPT Image 19 de jun. de 2025, 16_40_57.png'
 import hourglass from '../../../assets/hourglass.png'
@@ -16,38 +13,12 @@ import exclamacao from '../../../assets/mark.png'
 import card from '../../../assets/trading.png'
 import chansey from '../../../assets/chansey.png'
 import hearts from '../../../assets/health-bar.png'
-import home from '../../../assets/home.png'
-import cards from '../../../assets/cards.png'
-import friends from '../../../assets/friends.png'
-import vs from '../../../assets/vs.png'
-import menu from '../../../assets/menu.png'
 import missao from '../../../assets/done.png'
+
 export function Home() {
   return (
     <View style={styles.container}>
-      <View style={styles.header}>
-        <TouchableOpacity style={styles.botaoDir}>
-          <Image style={styles.botaoDImg} source={star} />
-          <Image style={styles.snorlax} source={snorlax} />
-        </TouchableOpacity>
-        <TouchableOpacity>
-          <Image style={styles.perfil} source={perfil} />
-          <Text style={styles.nivel}>Nv. 42</Text>
-        </TouchableOpacity>
-        <TouchableOpacity>
-          <View style={styles.botoes}>
-            <TouchableOpacity>
-              <Image style={styles.botoesEsq} source={money} />
-            </TouchableOpacity>
-            <TouchableOpacity>
-              <Image style={styles.botoesEsq} source={news} />
-            </TouchableOpacity>
-            <TouchableOpacity>
-              <Image style={styles.botoesEsq} source={gift} />
-            </TouchableOpacity>
-          </View>
-        </TouchableOpacity>
-      </View>
+      <Header />
       <View style={styles.conteudo}>
         <LinearGradient
           colors={['#D0D0DC', '#FA3419']}
@@ -105,23 +76,7 @@ export function Home() {
           <Text style={styles.textMissao}>Missões</Text>
         </TouchableOpacity>
       </View>
-      <View style={styles.footer}>
-        <TouchableOpacity>
-          <Image style={styles.botoesFooter} source={home} />
-        </TouchableOpacity>
-        <TouchableOpacity>
-          <Image style={styles.botoesFooter} source={cards} />
-        </TouchableOpacity>
-        <TouchableOpacity>
-          <Image style={styles.botoesFooter} source={friends} />
-        </TouchableOpacity>
-        <TouchableOpacity>
-          <Image style={styles.botoesFooter} source={vs} />
-        </TouchableOpacity>
-        <TouchableOpacity>
-          <Image style={styles.botoesFooter} source={menu} />
-        </TouchableOpacity>
-      </View>
+      <Footer />
     </View>
   )
 };
