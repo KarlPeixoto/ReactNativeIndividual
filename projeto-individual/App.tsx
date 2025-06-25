@@ -1,10 +1,9 @@
 import React from 'react';
-import { Home } from './src/screens/Home/home';
-import { Login } from './src/screens/Login/login';
+import { Routes } from './src/routes/'
 
 function App() {
   return (
-    <Home/>
+    <Routes/>
 
   )
 }

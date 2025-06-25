@@ -16,6 +16,8 @@ import hearts from '../../../assets/health-bar.png'
 import missao from '../../../assets/done.png'
 
 export function Home() {
+  
+  
   return (
     <View style={styles.container}>
       <Header />
