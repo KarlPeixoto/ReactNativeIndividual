@@ -2,7 +2,6 @@ import React from 'react';
 import { View, Text, Image, TouchableOpacity } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
 import { styles } from './styles'
-import { Footer } from '../../components/Footer';
 import { Header } from '../../components/Header';
 
 import pack from '../../../assets/Pack.png'
@@ -78,7 +77,6 @@ export function Home() {
           <Text style={styles.textMissao}>Missões</Text>
         </TouchableOpacity>
       </View>
-      <Footer />
     </View>
   )
 };

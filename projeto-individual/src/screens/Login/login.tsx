@@ -3,8 +3,19 @@ import { View, Text, Image, TouchableOpacity, TextInput } from 'react-native';
 import { styles } from './styles'
 import pokemon from '../../../assets/International_Pokémon_logo.svg.png'
 import eye from '../../../assets/eye.png'
+import { useNavigation } from '@react-navigation/native';
+import { NativeStackNavigationProp } from '@react-navigation/native-stack';
+
+ export type StackParamList = {
+    Home: undefined;
+
+};
+
+type LoginNavigationProp = NativeStackNavigationProp<StackParamList>;
 
 export function Login() {
+const navigation = useNavigation<LoginNavigationProp>();
+    
     return (
         <View style={styles.container}>
             <Image style={styles.imagem} source={pokemon} />
@@ -15,7 +26,7 @@ export function Login() {
             />
             <Image style={styles.eye} source={eye} />
             <Text style={styles.textoProblema}>Problemas ao fazer o Login?</Text>
-            <TouchableOpacity>
+            <TouchableOpacity onPress={() => navigation.replace('Home')}>
                 <Text style={styles.buttonEntrar}>Entrar</Text>
             </TouchableOpacity>
             <Text style={styles.textoConta}>Você já tem uma conta?</Text>
